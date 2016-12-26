@@ -1,3 +1,20 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<div id="Username">
+</div>
+
+<div id="LastRefresh">
+</div>
+
+<div id="container">
+	<div id="loginBlock">
+		Введите имя :
+		<input type="text" id="txtUserName" />
+		<button id="btnLogin" value="Войти">Войти</button>
+	</div>
+</div>
+
+<div id="Error">
+</div>
+
+@Ajax.ActionLink("Login", "Index", new { user = "" },
+		new AjaxOptions { UpdateTargetId = "container", OnFailure = "LoginOnFailure", OnSuccess = "LoginOnSuccess" },
+		new { @id = "LoginButton", @style = "visibility:hidden;" })
