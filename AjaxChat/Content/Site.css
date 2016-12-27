@@ -62,3 +62,52 @@ body, p {
 	font-weight: bold;
 	text-align: center;
 }
+
+#Users {
+	position: absolute;
+	width: 25%;
+	left: 1%;
+	height: 98%;
+	top: 1%;
+	background-color: #ddd;
+	text-align: left;
+}
+
+#Messages {
+	position: absolute;
+	width: 72%;
+	left: 27%;
+	height: 80%;
+	top: 1%;
+	background-color: #ddd;
+	text-align: left;
+	font-size: x-small;
+	overflow-y: scroll;
+}
+
+#inputForm {
+	position: absolute;
+	width: 72%;
+	left: 27%;
+	height: 12%;
+	top: 82%;
+	min-height: 60px;
+	background: #eee;
+	border: 1px solid silver;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+
+.serverMes {
+	color: #808080;
+	font-weight: bold;
+}
+
+button {
+	font-weight: bold;
+	width: 100px;
+}
+
+table, textarea {
+	width: 100%;
+}

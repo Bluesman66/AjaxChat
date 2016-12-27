@@ -23,3 +23,27 @@ function LoginOnSuccess(result) {
 function LoginOnFailure(result) {
 	
 }
+
+//Отображаем сообщение об ошибке
+function ChatOnFailure(result) {
+	
+}
+
+// при успешном получении ответа с сервера
+function ChatOnSuccess(result) {
+	
+}
+
+//скролл к низу окна
+function Scroll() {
+	var win = $('#Messages');
+	var height = win[0].scrollHeight;
+	win.scrollTop(height);
+}
+
+//отображение времени последнего обновления чата
+function ShowLastRefresh() {
+	var dt = new Date();
+	var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+	$("#LastRefresh").text("Последнее обновление было в " + time);
+}
