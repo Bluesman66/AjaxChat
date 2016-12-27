@@ -27,8 +27,7 @@ namespace AjaxChat
 			bundles.Add(new ScriptBundle("~/bundles/chat").Include(
 						"~/Scripts/chat.js"));
 
-			bundles.Add(new StyleBundle("~/Content/css").Include(
-					  "~/Content/bootstrap.css",
+			bundles.Add(new StyleBundle("~/Content/css").Include(					  
 					  "~/Content/site.css"));
 		}
 	}
