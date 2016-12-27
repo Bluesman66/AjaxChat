@@ -70,7 +70,7 @@ namespace AjaxChat.Controllers
 					//для каждлого пользователя запоминаем воемя последнего обновления
 					currentUser.LastPing = DateTime.Now;
 
-					// удаляем неаквтивных пользователей
+					// удаляем неактивных пользователей
 					List<ChatUser> removeThese = new List<ChatUser>();
 					foreach (ChatUser usr in _chatModel.Users)
 					{
